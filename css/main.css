@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body 
+{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#container
+{
+	margin: 0 auto;
+  	max-width: 1140px;
+  	background-color: #efefef;/*to show the maximun width*/
+}
+
+.box
+{
+  	color: #fff;
+  	padding: 20px 20px 400px 20px;
+  	text-align: center;
+
+}
+
+.Column1
+{
+	background-color: pink;
+}
+
+.Column2
+{
+	background-color: red;
+}
+
+.Column3, .Column4
+{
+	display: none;
+}
+
+@media screen and (min-width: 641px){
+	#container
+	{
+  		display: flex;
+  		flex-direction: row;
+	}
+
+	.box
+	{
+		flex: 1;
+		margin: 10px; 
+	}
+
+	.Column1
+	{
+		background-color: blue;
+	}
+
+	.Column2
+	{
+		background-color: purple;
+	}
+	
+	.Column3
+	{
+		background-color: grey;
+		display: block;
+	}
+
+	.Column4
+	{
+		background-color: brown;
+		display: block;
+	}
+}
